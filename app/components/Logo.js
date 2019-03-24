@@ -26,7 +26,7 @@ class Logo extends React.Component{
         this.__setEllipse(strokeColor, strokeWidth);
         this.__setBackground(bgColor);
         this.__downloadSVG();
-        this.__downlaodImage();
+        this.__downloadImage();
     }
 
     componentDidMount(){
@@ -34,7 +34,7 @@ class Logo extends React.Component{
         this.__setEllipse(strokeColor, strokeWidth);
         this.__setBackground(bgColor);
         this.__downloadSVG();
-        this.__downlaodImage();
+        this.__downloadImage();
         
     }
 
@@ -48,7 +48,7 @@ class Logo extends React.Component{
         downloadLink.download = "react-logo.svg";
     }
 
-    __downlaodImage() {
+    __downloadImage() {
         let svg = document.getElementById("logo-svg");
         var svgSize = svg.getBoundingClientRect();
         var svgData = new XMLSerializer().serializeToString(svg);
